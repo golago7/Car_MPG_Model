@@ -10,7 +10,8 @@ on:
       - sdk-preview
     paths:
       - jobs/autompg_pipeline/**
-      - .github/workflows/cli-jobs-pipelines-auto-mpg-pipeline.yml
+      #- .github/workflows/cli-jobs-pipelines-auto-mpg-pipeline.yml
+      - .github/workflows/cli-jobs-pipelines-autom-mpg.yml
       - run-pipeline-jobs.sh
       - setup.sh
 jobs:
