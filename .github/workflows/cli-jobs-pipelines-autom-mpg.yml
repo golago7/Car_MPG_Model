@@ -20,11 +20,12 @@ jobs:
     - name: check out repo
       uses: actions/checkout@v2
     - name: azure login
-      uses: azure/login@v1.5.1
+      uses: azure/login@v1
       with:
-        creds: ${{secrets.MT}}
+        creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: setup
       run: bash setup.sh
+      working-directory: cli
       continue-on-error: true
     - name: run job
       run: bash -x ../../run-job.sh pipeline.yml
