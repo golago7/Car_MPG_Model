@@ -22,7 +22,7 @@ jobs:
     - name: azure login
       uses: azure/login@v1.5.1
       with:
-        creds: ${{secrets.AZURE_CREDENTIALS}}
+        creds: ${{secrets.MT}}
     - name: setup
       run: bash setup.sh
       continue-on-error: true
